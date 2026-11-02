@@ -1,0 +1,28 @@
+{
+  "name": "thiep-cuoi-zen",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "images": "node scripts/optimize-images.mjs",
+    "predev": "npm run images",
+    "dev": "vite --host",
+    "prebuild": "npm run images",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.2.1",
+    "vite": "4.5.14"
+  },
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "optionalDependencies": {
+    "sharp": "0.35.5"
+  }
+}

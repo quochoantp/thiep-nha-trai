@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+
+# Ảnh gốc độ phân giải cao chỉ giữ trên máy, web dùng các bản trong optimized/
+src/assets/images/*.jpg
+src/assets/images/*.jpeg
+src/assets/images/gallery/
+src/assets/images/qr-groom.png
+src/assets/images/qr-bride.png
+# Bản trùng, không dùng: nhạc nằm ở public/audio/
+src/audio/
