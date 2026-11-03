@@ -150,7 +150,7 @@ export function Countdown() {
 /* =========================================================
    4. LỜI MỜI & SỰ KIỆN
    ========================================================= */
-function EventBlock({ ev, button, index }) {
+function EventBlock({ ev, index }) {
   const d = parseDate(ev.date)
   return (
     <Reveal className="event" effect="up" delay={index * 120}>
@@ -166,9 +166,6 @@ function EventBlock({ ev, button, index }) {
       <p className="serif event-lunar">{ev.lunar}</p>
       <p className="serif-caps event-place">{ev.place}</p>
       <p className="serif event-address">{ev.address}</p>
-      <a className="btn btn-brown" href={mapLink(ev.address, ev.mapUrl)} target="_blank" rel="noreferrer">
-        {button}
-      </a>
     </Reveal>
   )
 }
@@ -190,7 +187,7 @@ export function Events() {
                   <Swans />
                 </Reveal>
               )}
-              <EventBlock ev={ev} button={inv.directionsButton} index={i} />
+              <EventBlock ev={ev} index={i} />
             </div>
           ))}
         </div>

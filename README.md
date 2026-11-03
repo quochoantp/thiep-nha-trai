@@ -7,7 +7,7 @@ Thiệp cưới một trang, chạy mượt trên **điện thoại** và **máy
 1. Bìa: chữ "Wedding" viết tay, tên cô dâu chú rể, cánh hoa rơi.
 2. Save the date: phong bì có dấu sáp, ảnh trồi ra khỏi phong bì, cành hoa đung đưa.
 3. Dải đếm ngược.
-4. Lời mời và hai sự kiện: buổi tiệc, lễ thành hôn. Mỗi sự kiện có nút "Xem chỉ đường".
+4. Lời mời, hai sự kiện (bữa cơm thân mật, lễ thành hôn) và thông tin hai bên gia đình.
 5. Cô dâu chú rể và câu chuyện tình yêu.
 6. Golden hour of love: album ảnh ghép tự xếp.
 7. Đường đến hôn lễ: mã QR mở bản đồ và nút "Xem chỉ đường".
@@ -19,6 +19,8 @@ Thanh nổi ở cạnh dưới gồm:
 
 - **Đường đến hôn lễ:** cuộn tới mã QR địa điểm.
 - **Bắn tim:** tim bay lên.
+
+Sau khi mở, thiệp tự cuộn chậm tới cuối trong đúng độ dài bài nhạc. Khách chạm hoặc cuộn tay thì thiệp dừng, 5 giây sau chạy tiếp. Khi đổi nhạc, sửa `autoScroll.seconds` trong `content.js`.
 
 Góc trên bên phải có nút bật/tắt nhạc. Bấm vào ảnh bất kỳ để xem lớn; có thể vuốt hoặc dùng phím ← → để chuyển ảnh.
 

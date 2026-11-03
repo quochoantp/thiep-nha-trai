@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { InvitationContext } from './context'
+import { useAutoScroll } from './utils/useAutoScroll'
 import { Album, Countdown, Couple, Events, Hero, Opening, SaveTheDate, ThankYou, Venue } from './components/Sections'
 import { BottomBar, Lightbox, MusicButton } from './components/Floating'
 
@@ -17,6 +18,10 @@ export default function WeddingInvitation({ content, images, audio }) {
   const [lbIndex, setLbIndex] = useState(null)
 
   const hasAudio = !!(audio && audio.enabled && audio.src)
+
+  // Nhạc phát ngay khi bấm "Mở thiệp", còn màn mở thiệp mất thêm 1 giây mới tắt
+  const scroll = content.autoScroll
+  useAutoScroll(scroll.enabled && opened && lbIndex === null, scroll.seconds - (content.opening.enabled ? 1 : 0))
 
   // Tất cả ảnh có thể phóng to, theo thứ tự xuất hiện — để lướt qua lại trong lightbox
   const allPhotos = useMemo(

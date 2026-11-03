@@ -110,7 +110,8 @@ section {
 .reveal--right { opacity: 0; transform: translateX(60px); }
 .reveal--zoom { opacity: 0; transform: scale(0.88); }
 .reveal--fade { opacity: 0; }
-.reveal--wipe { clip-path: inset(-30% 100% -30% 0); }
+/* chừa 30% bề rộng (đã ẩn bằng opacity): nếu che hết, IntersectionObserver không bao giờ báo */
+.reveal--wipe { opacity: 0; clip-path: inset(-30% 70% -30% 0); }
 .reveal.is-in {
   opacity: 1;
   transform: none;

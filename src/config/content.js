@@ -29,6 +29,12 @@ const content = {
     button: 'Mở thiệp',
   },
 
+  // ---------- Tự cuộn từ đầu tới cuối thiệp, tính từ lúc bấm "Mở thiệp" ----------
+  autoScroll: {
+    enabled: true,
+    seconds: 89, // bằng độ dài bài nhạc (1 phút 29 giây)
+  },
+
   // ---------- 1. Bìa ----------
   hero: {
     script: 'Wedding',
@@ -52,7 +58,6 @@ const content = {
   // ---------- 4. Lời mời, các sự kiện & hai bên gia đình ----------
   invitation: {
     heading: ['TRÂN TRỌNG KÍNH MỜI QUÝ KHÁCH', 'TỚI DỰ BỮA CƠM THÂN MẬT', 'CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI'],
-    directionsButton: 'XEM CHỈ ĐƯỜNG',
     events: [
       {
         title: 'BỮA CƠM THÂN MẬT',
@@ -61,7 +66,6 @@ const content = {
         lunar: '(Tức ngày 13 tháng 10 năm Bính Ngọ)',
         place: PLACE,
         address: ADDRESS,
-        mapUrl: MAP_URL, // để trống: tự tạo link Google Maps từ địa chỉ
       },
       {
         title: 'LỄ THÀNH HÔN',
@@ -70,7 +74,6 @@ const content = {
         lunar: '(Tức ngày 14 tháng 10 năm Bính Ngọ)',
         place: PLACE,
         address: ADDRESS,
-        mapUrl: MAP_URL,
       },
     ],
     closing: 'Rất hân hạnh được đón tiếp!',
@@ -107,7 +110,7 @@ const content = {
     note: 'Quét mã QR hoặc bấm nút bên dưới để mở bản đồ',
     place: PLACE,
     address: ADDRESS,
-    mapUrl: MAP_URL,
+    mapUrl: MAP_URL, // để trống: tự tạo link Google Maps từ địa chỉ
     button: 'XEM CHỈ ĐƯỜNG',
   },
 
