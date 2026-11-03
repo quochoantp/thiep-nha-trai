@@ -125,6 +125,8 @@ Chữ viết tay mảnh ("Wedding", "the", "of", "Thank you", "Chú rể") dùng
 
 **Đang dùng GitHub Pages:** mỗi lần đẩy code lên nhánh `main`, GitHub tự build và đăng lại thiệp (`.github/workflows/deploy.yml`). Ảnh gốc không được đưa lên GitHub, nên khi thay ảnh hãy chạy `npm run images` rồi commit cả thư mục `optimized/`.
 
+**Đường dẫn:** tên miền `quochoanlinhlinh.io.vn` gắn ở repo `quochoantp.github.io`, không gắn ở repo thiệp. Đường dẫn của thiệp chính là tên repo: repo `thiep-nha-trai` có địa chỉ `/thiep-nha-trai/`, repo `thiep-nha-gai` có địa chỉ `/thiep-nha-gai/`. Không tạo file `CNAME` hay điền Custom domain trong các repo thiệp.
+
 Cách khác:
 
 Chạy `npm run build`, rồi chọn một trong hai cách:
