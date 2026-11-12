@@ -792,6 +792,9 @@ section {
 
   /* Bìa tràn toàn màn hình, ảnh ngang */
   .hero { aspect-ratio: auto; height: 100vh; min-height: 620px; }
+  /* màn hình rộng cắt bớt trên/dưới ảnh: giữ phần trên để không mất đầu cô dâu chú rể */
+  .hero-img img,
+  .cover-img img { object-position: 50% 5%; transform-origin: 50% 0; }
   .hero-text { bottom: 10vh; }
   .hero-script { font-size: clamp(150px, 15vw, 240px); }
   .hero-name { font-size: 54px; display: inline-block; margin: 18px 22px 0; }
